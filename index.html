@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        .mainSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .linksSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            font-size: 1.4rem;
+            width: 30%;
+            background-color: rgb(255, 255, 245);
+            border: 0.1rem dashed gray;
+            border-radius: 1rem;
+        }
+
+        .link {
+            text-decoration: none;
+            color: rgb(200, 200, 200);
+            transition: 0.6s;
+        }
+
+        .link:hover {
+            color: black;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.8rem;
+            color: rgb(0, 145, 210);
+        }
+
+        strong {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainSection">
+        <h2>Example for query:</h2>
+        <p>http://localhost:3000/rates?currency=<strong>cryptocurrency</strong></p>
+        <h1>List of cryptocurrencies from <a href="https://docs.coincap.io/">CoinCap API 2.0</a></h1>
+        <div class="linksSection">{message}</div>
+    </div>
+</body>
+
+</html>
